@@ -136,10 +136,10 @@ void elimin() {
         for (int i = 0; i < regi; i++) {
             if (eli == numa[i]) {
                 numa[i] = 0;
-                no = 1;
+                no = no + 1;
             }
         }
-        if (n == 0) {
+        if (no == 0) {
             printf("Numero de articulo no existe\n");
         }
     } while (no == 0);
