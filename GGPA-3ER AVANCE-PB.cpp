@@ -259,23 +259,24 @@ void archi() {
     archivo << "Año de lanzamiento" << "\t";
     archivo << "Clasificacion" << "\t";
     archivo << "Caracteristicas" << "\t";
-    archivo << "Descripción" << "\t";
+    archivo << "Descripcion" << "\t";
     archivo << "Genero" << "\t";
     archivo << "Precio unitario" << "\t";
     archivo << "Impuesto" << "\t";
     archivo << "Total" << "\n";
     for (int i = 0; i < regi; i++) {
-        archivo << numa[i] << "\t";
-        archivo << nom[i].c_str() << "\t";
-        archivo << a[i] << "\t";
-        archivo << clas[i].c_str() << "\t";
-        archivo << carac[i].c_str() << "\t";
-        archivo << desc[i].c_str() << "\t";
-        archivo << gen[i].c_str() << "\t";
-        archivo << pun[i] << "\t";
-        archivo << imp[i] << "\t";
-        archivo << tot[i] << "\n";
-
+        if (numa[i] != 0) {
+            archivo << numa[i] << "\t";
+            archivo << nom[i].c_str() << "\t";
+            archivo << a[i] << "\t";
+            archivo << clas[i].c_str() << "\t";
+            archivo << carac[i].c_str() << "\t";
+            archivo << desc[i].c_str() << "\t";
+            archivo << gen[i].c_str() << "\t";
+            archivo << pun[i] << "\t";
+            archivo << imp[i] << "\t";
+            archivo << tot[i] << "\n";
+        }
     }
 }
 
