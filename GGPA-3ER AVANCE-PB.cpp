@@ -11,12 +11,12 @@ void listas();
 void elimin();
 void modi();
 void archi();
-int* a, regi, * numa, sn, n = 1;
+int* a, regi, * numa, n = 1;
 float* imp, * pun, * tot;
 string* carac, * desc, * nom, * gen, * clas;
 
 void alta() {
-    sn = 0;//para limpiar la variable
+    
     printf("ingresa la cantidad de registros\n");
     scanf_s("%d", &regi);
     a = new int[regi];
