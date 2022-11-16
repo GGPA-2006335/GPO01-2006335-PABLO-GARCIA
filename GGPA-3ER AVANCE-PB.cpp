@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <conio.h>
 #include <string.h>
 #include <string>
@@ -16,7 +16,7 @@ float* imp, * pun, * tot;
 string* carac, * desc, * nom, * gen, * clas;
 
 void alta() {
-    
+
     printf("ingresa la cantidad de registros\n");
     scanf_s("%d", &regi);
     a = new int[regi];
@@ -43,7 +43,7 @@ void alta() {
                 }
             } while (n < regi);
         }
-        n=1;
+        n = 1;
         printf("ingresa el A%co de lanzamiento\n", 164);
         scanf_s("%d", &a[i]);
         printf("ingresa el nombre del videojuego\n");
@@ -137,13 +137,13 @@ void listas() {
 
 void elimin() {
     int eli;
-        printf("ingrese el numero de articulo a eliminar\n");
-        scanf_s("%d", &eli);
-        for (int i = 0; i < regi; i++) {
-            if (eli == numa[i]) {
-                numa[i] = 0;
-            }
+    printf("ingrese el numero de articulo a eliminar\n");
+    scanf_s("%d", &eli);
+    for (int i = 0; i < regi; i++) {
+        if (eli == numa[i]) {
+            numa[i] = 0;
         }
+    }
 }
 
 void modi() {
@@ -251,7 +251,7 @@ void archi() {
     archivo << "Se seguira este formato" << "\n";
     archivo << "Numero de articulo" << "\t";
     archivo << "Nombre del videojuego" << "\t";
-    archivo << "Año de lanzamiento" << "\t";
+    archivo << "A�o de lanzamiento" << "\t";
     archivo << "Clasificacion" << "\t";
     archivo << "Caracteristicas" << "\t";
     archivo << "Descripcion" << "\t";
