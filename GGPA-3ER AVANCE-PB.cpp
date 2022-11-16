@@ -43,6 +43,7 @@ void alta() {
                 }
             } while (n < regi);
         }
+        n=1;
         printf("ingresa el A%co de lanzamiento\n", 164);
         scanf_s("%d", &a[i]);
         printf("ingresa el nombre del videojuego\n");
