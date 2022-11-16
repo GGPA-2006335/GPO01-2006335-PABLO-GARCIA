@@ -135,20 +135,14 @@ void listas() {
 }
 
 void elimin() {
-    int eli, no = 0;
-    do {
+    int eli;
         printf("ingrese el numero de articulo a eliminar\n");
         scanf_s("%d", &eli);
         for (int i = 0; i < regi; i++) {
             if (eli == numa[i]) {
                 numa[i] = 0;
-                no = no + 1;
             }
         }
-        if (no == 0) {
-            printf("Numero de articulo no existe\n");
-        }
-    } while (no == 0);
 }
 
 void modi() {
